@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis XV - Jaqueline</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Archivo CSS personalizado -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Pantalla de bienvenida -->
+    <div id="welcome-screen" class="text-center">
+        <h1 class="display-3">Bienvenido</h1>
+        <button class="btn btn-custom btn-lg mt-4" onclick="openInvitation()">Abrir invitación</button>
+    </div>
+
+    <!-- Contenido principal -->
+    <div id="main-content">
+        <!-- Encabezado -->
+        <header class="text-center">
+            <h1>Mis XV</h1>
+            <h2>Jaqueline</h2>
+            <p>Sábado 15 de marzo del 2025</p>
+        </header>
+
+        <!-- Contenedor para linternas flotantes -->
+        <div id="lantern-container"></div>
+
+        <!-- Imagen -->
+        <div class="container my-4 text-center">
+            <div class="princess-frame">
+                <img src="img/1.jpg" alt="Quinceañera" class="princess-image">
+            </div>
+        </div>
+
+        <!-- Canción -->
+        <div class="container my-4 text-center">
+            <h3 class="text-center">Escucha mi canción</h3>
+            <div class="text-center py-3"><iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/1dGr1c8CrMLDpV6mPbImSI?utm_source=generator&theme=0"
+                    width="100%" height="152" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe></div>
+        </div>
+
+        <!-- Mensaje -->
+        <div class="container my-4 text-center">
+            <div class="bg-light p-4 rounded shadow-sm">
+                <p class="mb-3">
+                    Hay momentos inolvidables que se atesoran en el corazón para siempre, por esa razón, quiero que
+                    compartas conmigo este día tan especial.
+                </p>
+                <p>
+                    Con la bendición de Dios y de mis padres <br> Salvador Carlos Flores Peinado <br> y <br> Aurora
+                    Yessica
+                    Estrada
+                    López.
+                </p>
+            </div>
+        </div>
+
+        <!-- Ubicación -->
+        <div class="container my-4">
+            <h3 class="text-center">Ubicación</h3>
+            <p class="text-center">Recuerda que es el sábado 15 de marzo del 2025</p>
+            <p class="text-center">La misa será en la Parroquia de Santiago Apóstol de Teyahualco</p>
+            <p class="text-center">A las 15:00</p>
+            <div class="text-center bg-light p-3 rounded map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d939.3050026884464!2d-99.1261372!3d19.6606169!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f45cf8aab9a9%3A0xdd0e69b2bbbe5206!2sParroquia%20de%20Santiago%20Ap%C3%B3stol%20de%20Teyahualco!5e0!3m2!1ses!2smx!4v1733369610934!5m2!1ses!2smx"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a href="https://maps.app.goo.gl/EQNom8b38SSBZXdFA" target="_blank" class="btn btn-custom">Abrir</a>
+            </div>
+        </div>
+
+        <!-- Fiesta -->
+        <div class="container my-4">
+            <h3 class="text-center">La fiesta será en:</h3>
+            <div class="text-center bg-light p-3 rounded map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d234.7863763332621!2d-99.1217442!3d19.6878299!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f494908aae69%3A0xa490564e2f0e62ef!2sCda.%20Cuauht%C3%A9moc%204%2C%20Barrio%20de%20Guadalupe%2C%2054966%20Tultepec%2C%20M%C3%A9x.!5e0!3m2!1ses!2smx!4v1733369552074!5m2!1ses!2smx"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a href="https://maps.app.goo.gl/CujhxnTRhcY2rDEb7" target="_blank" class="btn btn-custom">Abrir</a>
+            </div>
+        </div>
+
+        <!-- Cuenta regresiva -->
+        <div class="container my-4 text-center">
+            <div class="bg-light p-4 rounded shadow-sm countdown">
+                <p><strong>Cuenta regresiva:</strong></p>
+                <p id="countdown-timer">[Cargando...]</p>
+            </div>
+        </div>
+
+        <!-- Galería -->
+        <div class="container my-4 text-center">
+            <div class="photo-gallery">
+                <img src="img/2.jpg" alt="Foto 1" class="gallery-image">
+                <img src="img/3.jpg" alt="Foto 2" class="gallery-image">
+                <img src="img/4.jpg" alt="Foto 3" class="gallery-image">
+                <img src="img/5.jpg" alt="Foto 4" class="gallery-image">
+                <img src="img/6.jpg" alt="Foto 5" class="gallery-image">
+                <img src="img/7.jpg" alt="Foto 6" class="gallery-image">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Archivo JS personalizado -->
+    <script src="script.js"></script>
+</body>
+
+</html>
